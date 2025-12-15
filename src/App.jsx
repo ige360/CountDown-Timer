@@ -11,7 +11,8 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimer(stopTime-currentTime);
+      const now = Date.now(); 
+      setTimer(stopTime-now);
     } ,1000);
 
     return () => {
