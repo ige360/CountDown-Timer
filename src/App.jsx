@@ -10,13 +10,9 @@ function App() {
   const [timer, setTimer] = useState(stopTime-currentTime);
 
   useEffect(() => {
-    const interval = setInterval(
-
-    function updateTimer () {
-      const newTime = stopTime-currentTime;
-      setTimer(newTime);
-    }
-  ,1000);
+    const interval = setInterval(() => {
+      setTimer(stopTime-currentTime);
+    } ,1000);
 
     return () => {
       clearInterval(interval);
