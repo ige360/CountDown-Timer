@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2F7336;
+    background: linear-gradient(
+      to right,
+      #2F7336,#AA3A38
+    );
+    height: 100vh;
+    position: relative;
+}
